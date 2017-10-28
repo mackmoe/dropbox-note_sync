@@ -187,7 +187,6 @@ def upload(dbx, fullname, folder, subfolder, name, overwrite=True):
             print('*** API error', err)
             return None
     print('uploaded as', res.name.encode('utf8'))
-    print(dbx.files_get_metadata('/Cavs vs Warriors/Game 5/story.txt').server_modified)
     return res
 
 def yesno(message, default, args):
