@@ -4,7 +4,7 @@ A practical project to fight atrophe
 ---
 Wanted a quick n' dirty way to backup stuff on my linux box, thought it'd be fun to hit the v2 api with the python sdk.
 
-###Usage
+### Usage
 
 I use [autokey](https://github.com/autokey-py3/autokey) for both autopasting and keeping notes. The dropbox_notesync.py script will back up everthing you have in your autokey automatically, as long as you've kept the defaults for autokey. 
 
