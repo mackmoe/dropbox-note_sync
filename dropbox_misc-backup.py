@@ -17,11 +17,25 @@ import six
 import sys
 import time
 import unicodedata
+import shutil
 
 if sys.version.startswith('2'):
     input = raw_input  # noqa: E501,F821; pylint: disable=redefined-builtin,undefined-variable,useless-suppression
 
 import dropbox
+
+
+# Copy a single file overwriting dst with src
+shutil.copyfile('actual-src', 'actual-dst')
+
+# Copy a directory tree, overwriting dst with src
+def copytree(src, dst, symlinks=False, ignore=None):
+    s = os.path.join('actual-src', item)
+    d = os.path.join('actual-dst', item)
+    if os.path.isdir(s):
+        shutil.copytree(s, d, symlinks, ignore)
+    else:
+        shutil.copy2(s, d)
 
 # OAuth2 access token.  TODO: login etc.
 TOKEN = keyring.get_password("dropbox", "oauthtoken")
