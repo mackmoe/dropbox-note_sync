@@ -27,9 +27,9 @@ import dropbox
 TOKEN = keyring.get_password("dropbox", "oauthtoken")
 
 parser = argparse.ArgumentParser(description='Sync local notes to Dropbox')
-parser.add_argument('folder', nargs='?', default='note_sync/autokey/data',
+parser.add_argument('folder', nargs='?', default='note_sync/misc-backup',
                     help='Folder name in your Dropbox')
-parser.add_argument('rootdir', nargs='?', default='~/.config/autokey/data',
+parser.add_argument('rootdir', nargs='?', default='~/misc-backups',
                     help='Local directory to upload')
 parser.add_argument('--token', default=TOKEN,
                     help='Access token '
