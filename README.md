@@ -2,7 +2,7 @@
 
 A practical project to fight atrophe
 ---
-Wanted a quick n' dirty way to backup stuff on my linux box, thought it'd be fun to hit the v2 api with the python sdk.
+Wanted a quick n' dirty way to backup stuff on my linux box, thought it'd be fun to hit the dropbox v2 api with the python sdk.
 
 ### Usage
 
